@@ -1,0 +1,202 @@
+/* Estilo global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Barra de navegación */
+header {
+  background-color: #009688;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sección Principal */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0f2f1;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 30px;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+h1 {
+  color: #00796b;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #00796b;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #004d40;
+}
+
+/* Sección Características */
+#features {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#features h2 {
+  font-size: 28px;
+  color: #00796b;
+  margin-bottom: 30px;
+}
+
+#features ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#features ul li {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+/* Sección Testimonios */
+#testimonials {
+  padding: 50px 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#testimonials h2 {
+  font-size: 28px;
+  color: #00796b;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.testimonial p {
+  font-size: 20px;
+}
+
+/* Sección Contacto */
+#contact {
+  padding: 50px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 28px;
+  color: #00796b;
+  margin-bottom: 30px;
+}
+
+form input, form textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #00796b;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #00796b;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #004d40;
+}
+
+/* Pie de página */
+footer {
+  background-color: #009688;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero img {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 60%;
+      margin: auto;
+  }
